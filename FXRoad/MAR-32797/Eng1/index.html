@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Apparire</title>
+    <title>Popup</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -35,15 +35,16 @@
         margin-left: auto;
         margin-right: auto;
         background: #ffffff;
-        background-image: url("https://smartstp.s3.eu-central-1.amazonaws.com/web-content/stp-notebook-d.png");
-        background-position: left;
-        background-size: 224px 240px;
+        background-image: url("https://fxroad.s3.eu-central-1.amazonaws.com/web-content/megaphone-crypt.png");
+        background-position: 8px center;
+        background-size: 228px 234px;
         background-repeat: no-repeat;
         border-radius: 8px;
         padding: 32px;
         padding-bottom: 26px;
         max-width: 530px;
         width: 100%;
+        height: 244px;
         text-align: left;
         position: relative;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -141,21 +142,15 @@
       @media (max-width: 600px) {
         .popup {
           max-width: 310px;
-          height: 100%;
+          height: 451px;
           display: flex;
           flex-direction: column;
           align-items: center;
-          padding: 11px 18px 11px 18px;
+          padding: 0 18px 11px 18px;
           text-align: center;
-          background-image: none;
-
+          background-position: top;
+          background-size: 226px 226px;
           border-radius: 10px;
-        }
-
-        .popup img {
-          display: block;
-          width: 100%;
-          margin-left: -36px;
         }
         .popup-content {
           max-width: 274px;
@@ -203,19 +198,14 @@
         <span class="line line1"></span>
         <span class="line line2"></span>
       </button>
-      <img
-        class="bg-img"
-        src="https://smartstp.s3.eu-central-1.amazonaws.com/web-content/stp-notebook-m.png"
-        alt="stp-megaphone-m"
-      />
+
       <div class="popup-content">
-        <h2>Notizia dell'Ultima Ora</h2>
+        <h2>Breaking News</h2>
         <p class="description">
-          Le buste paga non agricole negli Stati Uniti aumentano di 227.000 a
-          novembre rispetto alle 200.000 previste.
+          U.S Nonfarm Payrolls rise by 227,000 in November vs. 200,000 expected
         </p>
-        <p class="description-bold">Come reagirà il mercato?</p>
-        <button class="cta-btn">Esplora i mercati</button>
+        <p class="description-bold">How will market react?</p>
+        <button class="cta-btn">Explore Markets</button>
         <p class="date">Feb 11, 15:00 GMT</p>
       </div>
     </div>
