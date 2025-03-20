@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Popup</title>
+    <title>ventana emergente</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link
@@ -11,8 +11,9 @@
       href="https://fonts.gstatic.com"
       crossorigin="anonymous"
     />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -21,7 +22,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "Noto Sans", sans-serif;
+        font-family: "Open Sans", sans-serif;
       }
 
       body {
@@ -30,20 +31,19 @@
 
       .popup {
         display: flex;
-        justify-content: start;
+        justify-content: end;
         margin-left: auto;
         margin-right: auto;
         background: #ffffff;
-        background-image: url("../news-redmegaphone-d.png");
-        background-position: right 18px center;
+        background-image: url("../notebook-d.png");
+        background-size: auto 230px;
+        background-position: left center;
         background-repeat: no-repeat;
         border-radius: 8px;
-        padding: 40px;
-        padding-left: 31px;
+        padding: 32px;
+        padding-right: 35px;
         max-width: 530px;
         width: 100%;
-        height: 244px;
-
         text-align: left;
         position: relative;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -51,24 +51,26 @@
       }
 
       .popup-content {
-        max-width: 207px;
+        max-width: 223px;
       }
 
       .popup h2 {
-        font-size: 21px;
-        color: #172b85;
+        font-size: 19px;
+        color: #000000;
         font-weight: 700;
         letter-spacing: 0;
+        font-family: "Work Sans", sans-serif;
       }
       .description {
-        color: #242424;
+        color: #000000;
         font-size: 12px;
         font-weight: 400;
         line-height: 20px;
         margin-top: 12px;
+        letter-spacing: -0.02em;
       }
       .description-bold {
-        color: #242424;
+        color: #000000;
         font-size: 12px;
         font-weight: 700;
         line-height: 20px;
@@ -79,8 +81,8 @@
         display: block;
         width: 100%;
         padding: 6px 0px;
-        background: #f0b748;
-        color: #242424;
+        background: #ffab2d;
+        color: #ffffff;
         font-size: 12px;
         line-height: 23px;
         font-weight: 700;
@@ -88,6 +90,7 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        font-family: "Work Sans", sans-serif;
       }
 
       .bg-img {
@@ -98,7 +101,7 @@
         font-size: 8px;
         line-height: 8px;
         font-weight: 400;
-        color: #242424;
+        color: #2a3048;
         text-align: center;
         margin-top: 4px;
       }
@@ -138,21 +141,25 @@
         .popup {
           max-width: 310px;
           height: 100%;
-
+          display: flex;
           flex-direction: column;
           align-items: center;
-          padding: 0 18px 11px 18px;
+          padding: 11px 18px 11px 18px;
           text-align: center;
           background-image: none;
+
           border-radius: 10px;
+        }
+
+        .popup img {
+          display: block;
+          margin-left: -2px;
         }
         .popup-content {
           max-width: 274px;
           width: 100%;
         }
-        .bg-img {
-          display: block;
-        }
+
         .popup h2 {
           font-size: 22px;
           line-height: 33px;
@@ -192,19 +199,16 @@
         <span class="line line1"></span>
         <span class="line line2"></span>
       </button>
-      <img
-        class="bg-img"
-        src="../news-redmegaphone-d.png"
-        alt="news-redmegaphone"
-      />
+
+      <img class="bg-img" src="../notebook-m.png" alt="stp-megaphone-m" />
       <div class="popup-content">
-        <h2>ताज़ा ख़बर</h2>
+        <h2>Última Hora</h2>
         <p class="description">
-          अमेरिका में गैर-कृषि पेरोल नवंबर में 227,000 बढ़ी, जबकि उम्मीद थी
-          200,000।
+          Las nóminas no agrícolas de EE.UU. aumentan en 227,000 en noviembre
+          frente a los 200,000 esperados
         </p>
-        <p class="description-bold">बाज़ार कैसे प्रतिक्रिया देगा?</p>
-        <button class="cta-btn">बाज़ारों का अन्वेषण करें।</button>
+        <p class="description-bold">¿Cómo reaccionará el mercado?</p>
+        <button class="cta-btn">Explorar Mercados</button>
         <p class="date">Feb 11, 15:00 GMT</p>
       </div>
     </div>

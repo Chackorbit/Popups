@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +12,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
@@ -21,7 +21,7 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        font-family: "Noto Sans", sans-serif;
+        font-family: "Open Sans", sans-serif;
       }
 
       body {
@@ -34,15 +34,16 @@
         margin-left: auto;
         margin-right: auto;
         background: #ffffff;
-        background-image: url("../news-redmegaphone-d.png");
-        background-position: right 18px center;
+        background-image: url("../news-bluemegaphone-d.png");
+        background-position: right 8px top 26px;
+        background-size: 270px 220px;
         background-repeat: no-repeat;
         border-radius: 8px;
         padding: 40px;
         padding-left: 31px;
         max-width: 530px;
         width: 100%;
-        height: 244px;
+        height: 100%;
 
         text-align: left;
         position: relative;
@@ -59,6 +60,7 @@
         color: #172b85;
         font-weight: 700;
         letter-spacing: 0;
+        font-family: "Work Sans", sans-serif;
       }
       .description {
         color: #242424;
@@ -88,6 +90,7 @@
         border: none;
         border-radius: 5px;
         cursor: pointer;
+        font-family: "Work Sans", sans-serif;
       }
 
       .bg-img {
@@ -138,12 +141,13 @@
         .popup {
           max-width: 310px;
           height: 100%;
-
           flex-direction: column;
           align-items: center;
           padding: 0 18px 11px 18px;
           text-align: center;
           background-image: none;
+          background-position: top;
+          background-size: 226px 226px;
           border-radius: 10px;
         }
         .popup-content {
@@ -152,6 +156,7 @@
         }
         .bg-img {
           display: block;
+          width: 100%;
         }
         .popup h2 {
           font-size: 22px;
@@ -194,17 +199,17 @@
       </button>
       <img
         class="bg-img"
-        src="../news-redmegaphone-d.png"
-        alt="news-redmegaphone"
+        src="../news-bluemegaphone-d.png"
+        alt="news-bluemegaphone"
       />
+
       <div class="popup-content">
-        <h2>ताज़ा ख़बर</h2>
+        <h2>Breaking News</h2>
         <p class="description">
-          अमेरिका में गैर-कृषि पेरोल नवंबर में 227,000 बढ़ी, जबकि उम्मीद थी
-          200,000।
+          U.S Nonfarm Payrolls rise by 227,000 in November vs. 200,000 expected
         </p>
-        <p class="description-bold">बाज़ार कैसे प्रतिक्रिया देगा?</p>
-        <button class="cta-btn">बाज़ारों का अन्वेषण करें।</button>
+        <p class="description-bold">How will market react?</p>
+        <button class="cta-btn">Explore Markets</button>
         <p class="date">Feb 11, 15:00 GMT</p>
       </div>
     </div>

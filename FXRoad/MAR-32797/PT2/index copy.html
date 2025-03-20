@@ -30,19 +30,20 @@
 
       .popup {
         display: flex;
-        justify-content: end;
+        justify-content: start;
         margin-left: auto;
         margin-right: auto;
         background: #ffffff;
-        background-image: url("https://fxroad.s3.eu-central-1.amazonaws.com/web-content/megaphone-gold.png");
-        background-position: left;
-        background-size: 268px 100%;
+        background-image: url("../news-redmegaphone-d.png");
+        background-position: right 18px center;
         background-repeat: no-repeat;
         border-radius: 8px;
-        padding: 32px;
-        padding-bottom: 26px;
+        padding: 40px;
+        padding-left: 31px;
         max-width: 530px;
         width: 100%;
+        height: 100%;
+
         text-align: left;
         position: relative;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -50,27 +51,25 @@
       }
 
       .popup-content {
-        max-width: 226px;
+        max-width: 207px;
       }
 
       .popup h2 {
-        font-size: 19px;
-        color: #000000;
+        font-size: 21px;
+        color: #172b85;
         font-weight: 700;
-        line-height: 100%;
         letter-spacing: 0;
         font-family: "Work Sans", sans-serif;
       }
       .description {
-        color: #2a3048;
+        color: #242424;
         font-size: 12px;
         font-weight: 400;
         line-height: 20px;
         margin-top: 12px;
-        letter-spacing: -0.02em;
       }
       .description-bold {
-        color: #545454;
+        color: #242424;
         font-size: 12px;
         font-weight: 700;
         line-height: 20px;
@@ -81,8 +80,8 @@
         display: block;
         width: 100%;
         padding: 6px 0px;
-        background: #ffab2d;
-        color: #ffffff;
+        background: #f0b748;
+        color: #242424;
         font-size: 12px;
         line-height: 23px;
         font-weight: 700;
@@ -101,7 +100,7 @@
         font-size: 8px;
         line-height: 8px;
         font-weight: 400;
-        color: #2a3048;
+        color: #242424;
         text-align: center;
         margin-top: 4px;
       }
@@ -140,31 +139,34 @@
       @media (max-width: 600px) {
         .popup {
           max-width: 310px;
-          height: 451px;
+          height: 100%;
           display: flex;
           flex-direction: column;
           align-items: center;
           padding: 0 18px 11px 18px;
           text-align: center;
-          background-position: top;
-          background-size: 226px 226px;
+          background-image: none;
           border-radius: 10px;
         }
         .popup-content {
           max-width: 274px;
           width: 100%;
         }
-
+        .bg-img {
+          display: block;
+        }
         .popup h2 {
           font-size: 22px;
-          line-height: 23px;
+          line-height: 33px;
+
           letter-spacing: 0;
         }
 
         .description {
           display: inline-block;
           font-size: 14px;
-          line-height: 18px;
+          line-height: 22px;
+
           max-width: 258px;
         }
         .description-bold {
@@ -192,6 +194,11 @@
         <span class="line line1"></span>
         <span class="line line2"></span>
       </button>
+      <img
+        class="bg-img"
+        src="../news-redmegaphone-d.png"
+        alt="news-redmegaphone"
+      />
       <div class="popup-content">
         <h2>Notícia de Última Hora</h2>
         <p class="description">
