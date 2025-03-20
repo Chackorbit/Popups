@@ -11,7 +11,6 @@
       href="https://fonts.gstatic.com"
       crossorigin="anonymous"
     />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Work+Sans:wght@400;700&display=swap"
       rel="stylesheet"
@@ -31,20 +30,20 @@
 
       .popup {
         display: flex;
-        justify-content: end;
+        justify-content: start;
         margin-left: auto;
         margin-right: auto;
         background: #ffffff;
-        background-image: url("../megaphone-d.png");
-        background-position: 8px center;
-        background-size: 228px 234px;
+        background-image: url("https://fxroad.s3.eu-central-1.amazonaws.com/web-content/news-redmegaphone-d.png");
+        background-position: right 18px center;
         background-repeat: no-repeat;
         border-radius: 8px;
         padding: 40px;
-        padding-right: 32px;
+        padding-left: 31px;
         max-width: 530px;
         width: 100%;
         height: 100%;
+
         text-align: left;
         position: relative;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -57,21 +56,20 @@
 
       .popup h2 {
         font-size: 21px;
-        color: #000000;
+        color: #172b85;
         font-weight: 700;
-        letter-spacing: 0.02em;
+        letter-spacing: 0;
         font-family: "Work Sans", sans-serif;
       }
       .description {
-        color: #000000;
+        color: #242424;
         font-size: 12px;
         font-weight: 400;
         line-height: 20px;
         margin-top: 12px;
-        letter-spacing: 0;
       }
       .description-bold {
-        color: #000000;
+        color: #242424;
         font-size: 12px;
         font-weight: 700;
         line-height: 20px;
@@ -83,13 +81,13 @@
         width: 100%;
         padding: 6px 0px;
         background: #f0b748;
-        color: #000000;
+        color: #242424;
         font-size: 12px;
         line-height: 23px;
         font-weight: 700;
         letter-spacing: 0.02em;
         border: none;
-        border-radius: 4px;
+        border-radius: 5px;
         cursor: pointer;
         font-family: "Work Sans", sans-serif;
       }
@@ -102,7 +100,7 @@
         font-size: 8px;
         line-height: 8px;
         font-weight: 400;
-        color: #000000;
+        color: #242424;
         text-align: center;
         margin-top: 4px;
       }
@@ -172,6 +170,7 @@
           max-width: 258px;
         }
         .description-bold {
+          color: #3d3c42;
           font-size: 14px;
           line-height: 22px;
         }
@@ -195,7 +194,11 @@
         <span class="line line1"></span>
         <span class="line line2"></span>
       </button>
-      <img class="bg-img" src="../megaphone-d.png" alt="megaphone" />
+      <img
+        class="bg-img"
+        src="https://fxroad.s3.eu-central-1.amazonaws.com/web-content/news-redmegaphone-d.png"
+        alt="news-redmegaphone"
+      />
       <div class="popup-content">
         <h2>Notícia de Última Hora</h2>
         <p class="description">
